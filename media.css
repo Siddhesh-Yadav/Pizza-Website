@@ -1,0 +1,271 @@
+/* css reset */
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-size: inherit;
+    font-size: 1.22rem;
+  }
+  
+  /* navigation */
+  #navbar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    background-color: #ff3838;
+    height: 200%;
+    width: 100%;
+    box-shadow: 0px 4px #ff3838;
+  }
+  
+  /* logo and image */
+  .logo{
+    margin-left: 0.7rem;
+    height: 150%;
+  }
+  .logo img {
+    width: 7em;
+    margin: 1em 0px 0px 1em;
+    border-radius: 10px;
+    transition: all 0.3s;
+    transform:scale(0.95) ;
+  }
+  .logo img:hover{
+    transform: scale(1.15);
+  }
+  .logo div {
+    color: rgb(255, 217, 0);
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+    text-shadow: 4px 4px #b77900;
+    width: max-content;
+  }
+  
+  /* location  */
+  .location{
+      display: none;
+  }
+  
+  /* navbar-list  */
+  #navbar span ul{
+    display: flex;
+    list-style: none;
+  }
+  #navbar span ul li{
+    font-family: 'Fredoka One', cursive;
+    margin: 0px 1.8em;
+    color: white;
+    transition: all 0.8s;
+    width: max-content;
+  }
+  #navbar span ul li:active {
+    color: black;
+    text-decoration: underline;
+  }
+  #navbar span ul li a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* searchbar */
+  .searchbar{
+    margin-right: 1.5em;
+    margin-bottom: 15px;
+    transition:all 1s;
+  }
+  .search{
+    border: solid 2px black;
+    border-radius: 30px;
+    padding: 10px 0px 10px 10px;
+    margin-top: 14px;
+    outline: none;
+  }
+  .btn{
+    padding: 5px 7px;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    outline: none;
+  }
+  .btn:active{
+    transform: scale(1.2);
+  }
+  
+  /* offers and deals*/
+  .offers{
+    
+    background-color: #ffd3e0;
+    display: flex;
+  }
+  .sale{
+    border: 2px solid #9900b9;
+    background-color: rgb(236, -35, 236);
+    color: gold;
+    margin: 34.5px;
+    padding: 0px 15px;
+    box-shadow: 9px 9px 9px 3px purple;
+    font-family: 'Teko', sans-serif;
+    font-size: 39px;
+  }
+  
+  /* intro */
+  #intro{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.45em;
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+    background:url('images/bg1.jpg')no-repeat center center/cover;
+    height: 17vh;
+  }
+  
+  /* The switch - the box around the slider */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: red;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .switch input:checked + .slider {
+    background-color: green;
+  }
+  .switch input:focus + .slider {
+    box-shadow: 0 0 1px rgb(177, 17, 11);
+  }
+  .switch input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  /* switch  */
+  .switchbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .switchbtn>span{
+    padding: 0px 20px 0px 20px;
+    margin: 3px 1px 0px 5px;
+    font-family: 'Fredoka One', cursive;
+  }
+  
+  /* menu */
+  #menu{
+    background-color: red;
+    margin-top: 3px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+  .items{
+    background-color: whitesmoke;
+    display: inline-flex;
+    flex-direction: row;
+    width: 75%;
+    box-shadow: 3px 3px 9px 2px #754646;
+  }
+  .items img{
+    width: 30%;
+    height: 150px;
+  }
+  .items span b{
+      font-size: 35px;
+  }
+  .items span p{
+      font-size: 29px;
+  }
+  .items span span{
+    float: right;
+    font-size: 33px;
+    font-weight: bolder;
+  }
+
+  
+  /* Contact Section */
+  #contact{
+    position: relative;
+    height: 15vh;
+    display: FLEX;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size:xx-large;
+  }
+  #contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('images/contact.jpg') no-repeat center center/cover;
+  }
+  #contact h1{
+    text-decoration: none;
+    color: #001fb9;
+    transition: all 0.8s;
+  }
+  #contact h1:active {
+    color: red;
+    text-decoration: underline;
+  }
+  #contact h1 a{
+    text-decoration: none;
+    color: #001fb9;
+    transition: all 0.8s;
+  }
+  #contact h1 a:active {
+    color: red;
+    text-decoration: underline;
+  }
+  
+  /* footer  */
+  footer{
+      text-align: center;
+    background: black;
+    color: white;
+    padding: 9px 20px;
+  }
