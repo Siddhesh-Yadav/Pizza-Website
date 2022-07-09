@@ -167,8 +167,9 @@
 </body>
     <script>
         let menu = document.getElementById('menu');
-        var checkboxes = document.querySelectorAll('input[type=checkbox]'),
-            checkboxArray = Array.from(checkboxes);
+        // var checkboxes = document.querySelectorAll('input[type=checkbox]'),
+        //     checkboxArray = Array.from(checkboxes);
+        var checkbox = document.querySelector("input[type=checkbox]");
 
         function confirmCheck() {
             if (this.checked) {
@@ -179,9 +180,10 @@
             }
         }
 
-        checkboxArray.forEach(function (checkbox) {
-            checkbox.addEventListener('change', confirmCheck);
-        });
+        // checkboxArray.forEach(function (checkbox) {
+        //     checkbox.addEventListener('change', confirmCheck);
+        // });
+        checkbox.addEventListener("change",confirmCheck);
 
     </script>
 </html>
